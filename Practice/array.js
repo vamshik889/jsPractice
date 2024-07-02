@@ -8,12 +8,12 @@ for(let i=0;i<arr.length;i++){
     console.log(arr[i]);
 }
 
-
+let arr2 = ["bmw", "maruti"]
 
 arr.push("hyd",1,"tcs");  //to add some values into an array at the end
 console.log(arr);
 
-arr.pop();    //to remove the last value from an array
+arr.pop();    //method to remove the last value from an array
 
 console.log(arr); 
 
