@@ -1,3 +1,6 @@
+
+//Array is an object in Javascript 
+
 let arr = ["vamshi",123,'krishna'];  //array 
 console.log(arr.length);  //length of array
 console.log(arr[2]);  //print a specific index value from array
@@ -21,8 +24,8 @@ arr[2]  = "TATA"; //reassigning the value of an array using index
 
 console.log(arr); 
 
-
-
+console.log(1); 
+console.log(Object.keys(arr));
 
 
 
