@@ -37,7 +37,7 @@ console.log(wordscount);
 
 //3) given an array - count the total number of letters
 
-let arr1 = ["vamshi", "krishna", "Domala"]
+let arr1 = ["vamshi", "krishna", "Domala", "FLM"]
 let countOfLetters = 0;
 
 for(let i = 0; i<arr1.length ; i++){
