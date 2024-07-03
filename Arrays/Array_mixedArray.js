@@ -1,3 +1,5 @@
+//write a function to separate the array with data types
+
 function mixedArray(arr){
     let numArr =[];
     let stringArr = [];

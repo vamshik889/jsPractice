@@ -18,7 +18,7 @@ let fun2 = function(name){
 } 
 
 let executor = function(age,name){  
-age(name);                        //in this line we are making that whatever the paremeter is coming make it as function and execut
+age(name);                        //in this line we are making that whatever the paremeter is coming make it as function and execute
 }
 
 executor(fun2,"vamshi");
