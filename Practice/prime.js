@@ -12,3 +12,25 @@ let count = 0;
      }
 }
 console.log("Prime numbers are :", primeNums);
+
+
+
+//Rectangle pattern
+
+// for(let hor =1 ;hor <=5;hor++){
+// let bag = "";
+
+// for(ver = 1;ver<=5;ver++){
+
+//     if(hor ==1 || hor ==5){
+//         bag+="*";
+//     }
+//     else if(ver == 1 || ver ==5){
+//         bag+="*";
+//     }
+//     else{
+//         bag+=" ";
+// }
+// }
+// console.log(bag);
+// }

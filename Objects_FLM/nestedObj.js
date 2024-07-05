@@ -18,6 +18,6 @@ let details = {
 
 for(let i in details){
     console.log(i);  //to print all keys
-    console.log(details[i]);  // to print all; values
+    console.log(details[i]);  // to print all values
 }
 
