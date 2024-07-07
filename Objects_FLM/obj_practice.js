@@ -13,7 +13,7 @@ details.name = "Vamshi" //details["name"] = "vamshi"
 
 console.log(details.name);
 
-//3)new keyword with pincode
+//3)new property with pincode
 
 details.pincode = 506319;
 

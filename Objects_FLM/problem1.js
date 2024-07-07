@@ -1,4 +1,4 @@
-//print the elements whose occurence is more than or equals to 2
+//print the sum of the elements whose occurence is more than or equals to 2
 
 let arr = [1,2,3,4,5,6,1,2,3,4,7,8,9,10];
 
