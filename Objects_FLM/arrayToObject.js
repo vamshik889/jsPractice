@@ -20,9 +20,9 @@ let empArr = [];
 for(let i = 0;i<students.length;i++){
     let obj = {};
 
-    obj["name"] = students[i];
-    obj["score"] = score[i];
+    obj["name"] = students[i];  //adding into object from array of students
+    obj["score"] = score[i];   //adding into object from array of score
 
-    empArr.push(obj);
+    empArr.push(obj);          //pushing the object to empty array
 }
 console.log(empArr);
