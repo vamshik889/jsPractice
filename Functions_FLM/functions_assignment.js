@@ -23,7 +23,7 @@ return diff;
 let absValue = absoluteValue(diff);
 console.log(absValue);
 
-//3)Find odd numbers from 0 to n
+//3)Find odd and even numbers from 0 to n
 
 function isOdd(n){
     
@@ -117,3 +117,20 @@ let reversed = stringReverse("Test")
 let swappedCase = actualReversed(reversed);
 
 console.log(swappedCase);
+
+
+//7)Convert an integer array to String
+
+function toString1(arr,n){
+
+    let emp = "";
+    for(let y = 0;y<n;y++){
+        emp+=arr[y];
+    }
+    return emp;
+}
+let arr3 = [1,2,3,4,5];
+let n = 5;
+let result33 = toString1(arr3,n);
+
+console.log(result33);
