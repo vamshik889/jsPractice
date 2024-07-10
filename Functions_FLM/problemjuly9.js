@@ -23,18 +23,19 @@ console.log(res);
 function strToArry(string1){
 
     let newArr =[];
-    let word = "";
+    let bag = "";
     for(let j =0;j<string1.length;j++){
         
         if(string1[j] == " "){
-            newArr.push(word);
-            word = "";
+            newArr.push(bag);
+            bag = "";
         }
         else{
-            word+=string1[j];
+            bag+=string1[j];
 
         }
     }
+    newArr.push(bag);  //AT THE LAST ITERATION we dont have space so the word wont be pushed but the bag variable has the last word so pushing that to array after the end of loop
     return newArr;
 
 }
