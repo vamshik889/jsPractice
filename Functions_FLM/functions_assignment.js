@@ -95,7 +95,7 @@ let Arr =["VAMSHI", "KRISHNA","DOMALA"];
 let result1 = toLower(Arr);
 console.log(result1);
 
-//6) Sawp the case using multiple functions : input : Test , output : tseT
+//6) Reverse the string multiple functions : input : Test , output : tseT
 
 function stringReverse(str){  //step1) reversing the string and pushing each elements to an array
     let emp =[];
