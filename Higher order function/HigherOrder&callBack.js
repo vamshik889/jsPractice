@@ -34,5 +34,5 @@ function addEven(evenFun,array){  //evenFun is a function which is passed in lin
     console.log(sum)  
     
 }
-addEven(even,[1,2,3,4,5,6]);  //passing the even() function as argument to addeven() function with parameter name as evenFun
+addEven(even,[1,2,3,4,5,6]);  //passing the even() function as argument to addEven() function with parameter name as evenFun
 
