@@ -25,9 +25,9 @@ console.log(newArr);
 
 let arr2 = [3,4,5,6,7];
 let str ="";
-arr2.forEach(function(element,index){
+arr2.forEach(function(element,index){   
     if(index%2 === 0){
-       str+=element;
+       str+=element;                          
     }
     else{
         str+= " - ";
