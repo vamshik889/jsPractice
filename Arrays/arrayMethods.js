@@ -15,8 +15,10 @@ console.log(a);
 
 let arr = ["jan","march","april"]   //splice method - The splice() method of Array instances changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.
 arr.splice(1,0,"feb")   //syntax : splice(start, deleteCount, item1, item2, /* …, */ itemN)         
-console.log(arr)                //[ 'jan', 'feb', 'feb', 'march' ]
+console.log(arr)                //[ 'jan', 'feb', 'march', 'april' ]
+//explanation: here we are started at index 1 and delete count is 0 so no deletion happens and the item is given as feb so it will be added at index1
 
+//splice method - arr.splice(start,deletecount,item); start is nothing but the index and delete count is number of elements to delete including the start index element and item is nothing but after deletion we will be adding at that index 
 
 //join  - The join() method of Array instances creates and returns a new string by concatenating all of the elements in this array, separated by commas or a specified separator string. If the array has only one item, then that item will be returned without using the separator.
 const elements = ['Fire', 'Air', 'Water'];  //syntax : join(separator)

@@ -12,6 +12,7 @@ let res = arr.flat(3)  //The method flat(3) will flatten the array up to a depth
 
 console.log(res);
 
+
 //2)Infinity Depth: If you want to flatten an array to any depth, you can use flat(Infinity).
 
 let infiniteFlatten = arr.flat(Infinity);
