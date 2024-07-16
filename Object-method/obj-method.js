@@ -2,12 +2,14 @@
 
 let obj = {                  
     name: "vamshi",
-    print : function(){
+    hello : function(){
         console.log("hello");    //anonymous functions are specifically made to create the object methods
-    }
+    },
+    arr : [1,2,3,4]
 
 }
-obj.print();
+obj.hello();
+console.log(obj.arr);
 
 
 function foo(a = "vamshi", b = "krishna"){  //default parameters 
@@ -15,3 +17,5 @@ function foo(a = "vamshi", b = "krishna"){  //default parameters
     console.log(a,b);                          
 }
 
+foo("k", "s"); //if we pass arguments this will be considered
+foo() // as wea re not passing any arguments the default parameters will be considered
