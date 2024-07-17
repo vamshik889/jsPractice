@@ -29,6 +29,10 @@ console.log(password);
 }
 console.log(a);
 
+{
+    var username = "Mark";
+}
+console.log(username); //output : Mark    //even the username is defined in the block we can still call it outside because it's a var but incase of let and const it will throw an error
 
 
 
