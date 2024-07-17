@@ -2,9 +2,15 @@
 
 //we use HOF only for array.
 
-/*Syntax:
+/*Syntax: forEach
          forEach(callbackFn)
          forEach(callbackFn, thisArg) */
+
+
+
+//Syntax:
+  //       reduce(callbackFn)
+  //       reduce(callbackFn, initialValue)
 
 let array = [1, 2, 3, 4];
                                                      
