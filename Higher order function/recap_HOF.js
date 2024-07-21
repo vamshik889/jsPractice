@@ -14,6 +14,9 @@ let arr = [1,2,3,4,5,6,7,8,9];
 console.log(res);
 
 //map - it will always return the same length of array
+//syntax:   filter(callbackFn)
+        //  filter(callbackFn, thisArg)
+
 
 //1)give me the output as an array with the multiplications of 3 with below given array
 let arr2 = [1,2,3,4,5];
@@ -25,6 +28,7 @@ console.log(newArr);   //[ 3, 6, 9, 12, 15 ]
 
 
 //filter - it will also return a new Arry but the length of the new array varies on the condition
+//syntax: 
 
 let arr3 = [1,2,3,4,5,6]
 

@@ -1,6 +1,6 @@
 let str = "naman";
 let reversedStr ="";
-for(let i =0;i<str.length;i++){
+for(let i =str.length-1;i>=0;i--){
 reversedStr += str[i];
 }
 if(str === reversedStr){

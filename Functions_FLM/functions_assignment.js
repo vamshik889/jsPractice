@@ -25,7 +25,7 @@ console.log(absValue);
 
 //3)Find odd and even numbers from 0 to n
 
-function isOdd(n){
+function isEven(n){
     
    if(n%2 == 0){
             return true;
@@ -36,7 +36,7 @@ function isOdd(n){
     }
 
 for(let j = 0;j<=7;j++){
-    let res = isOdd(j);
+    let res = isEven(j);
     if(res === true){
         console.log("number is even : ",j)
     }

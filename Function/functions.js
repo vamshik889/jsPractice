@@ -60,8 +60,8 @@ var person = {
         mandal : "Parkal",
         state: "Telangana"
     },
-    "isfromState": function(state){
-        return(this.address.state === "Telangana");
+    "isfromState": function(stat){
+        return(this.address.state === stat);
     }
 
 }

@@ -21,11 +21,6 @@ function greet(name){
 greet("Vamshi")
 
 
-
-
-
-
-
 let x = {
     school : "NHS",
     Fname : "vamshi",

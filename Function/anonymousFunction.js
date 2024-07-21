@@ -6,7 +6,7 @@ let c = fun1(22);
 console.log(c);
 
 // fun1 = 5;
-// fun1();  //TypeError: fun1 is not a function
+//fun1();  //TypeError: fun1 is not a function
 
 
 
