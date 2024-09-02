@@ -39,7 +39,7 @@ function strToArry(string1){
     return newArr;
 
 }
-
+                                                                                                                                                                                                                            
 let string = "vamshi krishna domala";
 let arr5 = strToArry(string);
 console.log(arr5);
