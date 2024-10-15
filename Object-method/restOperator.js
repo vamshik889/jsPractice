@@ -8,3 +8,5 @@ function print(...arr){  //to not to write the multiple parameters in the functi
 }
 
 print(1,2,3,4,5,6,7,8,9,10); //output is array of all items : [1, 2, 3, 4,  5,6, 7, 8, 9, 10]
+
+

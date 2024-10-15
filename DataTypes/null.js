@@ -1,7 +1,7 @@
 let a = null;
 console.log(a);
 
-console.log(typeof(null));
+console.log(typeof(null)); //object
 
 console.log(4 + "44"); //444 
 

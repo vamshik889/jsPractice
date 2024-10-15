@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .card-item{
+            height: 200px;
+            width: 300px;
+            padding: 5px;
+            border: 1px solid black;
+            display: flex;
+           gap: 10px;
+            flex-direction: column;
+
+        }
+
+        .card{
+            display:flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+    </style>
+  </head>
+  <body>
+ 
+      <div class="card"></div>
+
+  </body>
+  <script>
+    let data = fetch("https://api.sampleapis.com/coffee/hot")
+      .then((res) => res.json()) //fetch is a promise so we are handling with then here
+      .then((data) => renderData(data)); //and json() is a promise so anothen then() to handle it
+
+    function renderData(data) {
+        let container = document.querySelector(".card")
+        container.innerHTML = "";
+
+      data.forEach((ele) => {
+        let div = document.createElement("div");
+        div.className = "card-item";
+
+        div.innerHTML = `<h4>Title: ${ele.title}</h4>
+                        <p>Description: ${ele.description}</p>
+        
+        `;
+        container.appendChild(div);
+
+       
+      });
+    }
+    
+
+  </script>
+</html>
