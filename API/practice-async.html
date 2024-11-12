@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .element {
+        height: 400px;
+        width: 400px;
+        border: 1px solid black;
+      }
+      .element>p , title{
+        margin: 5px;
+        padding: 5px;
+      }
+      .element > img {
+        height: 200px;
+        width: 200px;
+        margin: 10px;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container"></div>
+  </body>
+</html>
+<script>
+  let getData = async () => {
+    try {
+      let response = await fetch("https://api.sampleapis.com/coffee/hot");
+      let data = await response.json();
+      renderData(data);
+      console.log(data)
+    } catch (error) {
+      console.log(error);
+    } 
+  };
+  let renderData = (data) => {
+      let container = document.querySelector(".container");
+      data.forEach((element) => {
+        let div = document.createElement("div");
+        div.className = "element";
+
+        let img = document.createElement("img");
+        img.src = element.image;
+        img.className = "image"
+        
+        let title = document.createElement("h4");
+        title.className = "title";
+        title.innerText = element.title;
+
+        let description = document.createElement("p");
+        description.className = "description";
+        description.innerText = element.description;
+
+        div.append(title, img, description);
+        container.append(div);
+      });
+    };
+    getData();
+  
+</script>
