@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .form-wrapper{
+            height: 400px;
+            width: 350px;
+            margin: auto;
+            align-items: center;
+            align-content: center;
+            background-color: rgb(227, 92, 234);
+            border: 1px solid blue;
+           
+           
+        }
+        .container{
+            display: flex;  
+            flex-direction: column;
+            height: 350px;
+            justify-content: center;
+            gap: 10px;
+            
+
+        }
+        .inp-field{
+            width: 200px;
+            height: 30px;
+            margin: 10px auto;
+            border-radius: 5px;
+        }
+        #login{
+            width: 200px;
+            margin:  10px auto;
+        }
+        .avatar{
+            height: 100px;
+            width: 100px;
+            object-fit: cover;
+            overflow: scroll;
+            border-radius: 50%;
+            margin:  10px auto;
+            margin-top: 0px;
+            padding-top: 0px;
+        }
+        .heading{
+            margin: auto;
+            text-align: center;
+        }
+        button{
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        #login:hover{
+            background-color: rgb(16, 81, 235);
+            cursor: pointer;
+            color: white;
+
+        }
+        .success{
+            background-color: green;
+            font-weight: bold;
+        }
+        .fail{
+            background-color: red;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="form-wrapper">
+       <h2 class="heading" >User Login</h2>
+        <form class="container">
+        <img src="https://th.bing.com/th/id/OIP.IXo2-EG-CQaJeHN4-UFuZgHaHa?rs=1&pid=ImgDetMain" alt="avatar" class="avatar">
+        <input type="text" required id="username" placeholder="Enter Username" class="inp-field"></input>
+        <input type="password" required id="password" placeholder="Enter Password" class="inp-field"></input>
+        <a href="#" target="_blank" style="margin-left: auto; padding-right: 10px;">forgot password?</a>
+        <button id="login">Login</button>
+        <div class="login-msg" style="margin: auto; padding: 2px;"></div>
+
+        </form>
+        
+    </div>
+</body>
+</html>
+<script>
+
+let admin = {
+    username:"vamshi",
+    password : "vamshi123"
+}
+let login = document.getElementById("login");
+login.addEventListener("click",handleLogin)
+function handleLogin(){
+    event.preventDefault();
+    let username = document.getElementById("username").value;
+    let password = document.getElementById("password").value;
+    let msg = document.querySelector(".login-msg");
+    console.log("exec")
+    
+    if(admin.username == username && admin.password == password ){
+         msg.textContent = "Login Success";
+         msg.classList.remove("fail")
+         msg.classList.add("success")
+        console.log(msg)
+    }
+    else{
+          msg.innerText = "Login failed !"
+          msg.classList.remove("success")
+          msg.classList.add("fail")
+    }
+
+}
+
+</script>
