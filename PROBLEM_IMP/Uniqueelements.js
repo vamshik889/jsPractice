@@ -1,3 +1,5 @@
+//Method:1 
+
 let arr = [1,2,3,4,5,6,1,2,3,4,5,6,7,8,9]
 
 function removeDup(arr){
@@ -14,4 +16,9 @@ function removeDup(arr){
 }
 
 let dup = removeDup(arr);
-console.log(dup)
+console.log(dup);
+
+//Method : 2) 
+
+let a = [1, 2, 3, 4,6,6,3,2];
+console.log([...new Set(a)])  //using set which doesn't have the duplicate values
