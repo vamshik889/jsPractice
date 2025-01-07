@@ -46,7 +46,7 @@
             highest = highestTotal;
             highstudent = this.data[j].name;
 
-           }
+           }    
         }
         console.log("highest total is : ",highest, "and high student is :",highstudent );
        }

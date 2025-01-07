@@ -21,3 +21,4 @@ for(let i in details){
     console.log(details[i]);  // to print all values
 }
 
+

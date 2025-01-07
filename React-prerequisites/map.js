@@ -39,11 +39,11 @@ let isEven = numbers4.map(num => num % 2 === 0);
 console.log(isEven); // Output: [false, true, false, true, false]
 
 // Example 7: Mapping an array of objects and adding a new property
-let products = [
-    { name: "Laptop", price: 1000 },
-    { name: "Phone", price: 500 },
-    { name: "Tablet", price: 300 }
-];
+    let products = [
+        { name: "Laptop", price: 1000 },
+        { name: "Phone", price: 500 },
+        { name: "Tablet", price: 300 }
+    ];
 
 let productsWithDiscount = products.map(product => {
     return { ...product, discountPrice: product.price * 0.9 };

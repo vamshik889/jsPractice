@@ -20,3 +20,8 @@ for (let j = arr1.length - 1;j>=0; j--){
 let str = "vamshi krishna";
 
 console.log(str.toUpperCase());
+
+let sum = arr.reduce((acc,cur)=>{
+return acc+=cur;
+},0)
+console.log(sum)
