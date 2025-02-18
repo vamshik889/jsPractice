@@ -7,6 +7,7 @@ console.log(multiOf2);
 
 let evenArr = multiOf2.filter((element)=>element%2 === 0 && element<10);
 console.log(evenArr);
+console.log(arr)
 
 let sum = evenArr.reduce((accumulator,element)=>accumulator+=element,0);
 

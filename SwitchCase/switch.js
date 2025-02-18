@@ -1,4 +1,4 @@
-day = "sat";
+const day = "mon";
 switch(day){
   case "sun": console.log("Sunday");
     break;

@@ -18,6 +18,8 @@ console.log(arrayUsingKeys); // Output: [1, 2, 3, 4]
 const arrayUsingEntries = Object.entries(obj).map(([key, value]) => value);
 console.log(arrayUsingEntries); // Output: [1, 2, 3, 4]
 
+console.log("vamshi",Object.entries(obj))
+
 // **4. Using Array.from()**
 // If the object keys are numeric and sequential like an array, Array.from() can directly convert the values.
 const arrayUsingArrayFrom = Array.from(Object.values(obj));
