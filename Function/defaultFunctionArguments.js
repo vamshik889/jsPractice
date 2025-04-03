@@ -3,4 +3,4 @@ let add = function(a,b){       //arguments and this are the Default arguments
 return a+b;
 };                         
 
-console.log(add(10, 20, 30, 40));
+console.log(add(10, 20, 30, 40));   
