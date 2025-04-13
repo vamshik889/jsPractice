@@ -1,4 +1,4 @@
-//reduce function - it wii take 2 arguments - 1)Call back function 2) initial value anmd within call back function it will take two arguments i)element , ii)accumulator
+//reduce function - it wii take 2 arguments - 1)Call back function 2) initial value and within call back function it will take two arguments i)element , ii)accumulator
 
 //it takes an array and return a single value.
 
@@ -6,8 +6,8 @@
 
 let arr = [1,2,3,4,5,6,7,8,9];
 
-  let res =   arr.reduce((element,accumulator)=>{   //as this is returning we are capturing the same in res variable
-    accumulator = accumulator+element;          //short way of writing the same function alet res = arr.reduce((element,accumulator)=>(accumulator = element +accumulator),0)
+  let res =   arr.reduce((acc,ele)=>{   //as this is returning we are capturing the same in res variable
+    acc = acc+ele;          //short way of writing the same function alet res = arr.reduce((element,accumulator)=>(accumulator = element +accumulator),0)
 
         return accumulator;
     },0)
