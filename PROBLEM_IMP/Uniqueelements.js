@@ -22,3 +22,22 @@ console.log(dup);
 
 let a = [1, 2, 3, 4,6,6,3,2];
 console.log([...new Set(a)])  //using set which doesn't have the duplicate values
+
+//Method 3:
+
+function removeDuplicates(arr){
+
+  let obj = {};
+  let res = []
+  for(let char of arr){
+    if(!obj[char]){
+      obj[char] = true
+      res.push(char)
+    }
+  
+  }
+  return res;
+}
+
+const rrr = removeDuplicates(a)
+console.log(rrr)
