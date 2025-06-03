@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+//Currying is a technique of converting a function that takes multiple arguments into a series of functions, each taking one argument at a time.
+//eg:1
+    function a(q){
+        return function(x){
+            return function(d){
+                return q+x+d
+            }
+        }
+
+    }
+    const res = a(9)(10)(3)
+    console.log(res)
+
+
+//eg:2
+
+function outer(storedUserName,Storedpassword){
+
+    return function(givenusername,givenPassword){
+        if(storedUserName === givenusername && Storedpassword === givenPassword){
+            console.log("you are allowed to login")
+        }
+        else{
+            console.log("wrong credentials")
+        }
+    }
+}
+ const uservalidation = outer("vamshi","123")
+
+uservalidation("vamshi","123")
+
+
+
+</script>
+</html>

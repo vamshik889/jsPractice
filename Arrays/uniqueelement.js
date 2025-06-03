@@ -7,6 +7,7 @@ function unique(array){
   for(let num of array){
     countmap.set(num,(countmap.get(num) || 0) +1);
   }
+  console.log(countmap)
   for(let [key,val] of countmap){
     if(val===1){
       arr.push(key)
@@ -18,3 +19,21 @@ function unique(array){
 
 let res = unique(array);
 console.log(res)
+
+const objFun = (arr)=>{
+  const newObj = {};
+  arr.forEach((e)=>{
+    if(newObj[e] !==undefined){
+      newObj[e] = Number(newObj[e])+1
+    }
+    else{
+      newObj[e] = 1
+    }
+  })
+
+  return newObj
+}
+
+const newO = objFun(array)
+console.log(newO)
+

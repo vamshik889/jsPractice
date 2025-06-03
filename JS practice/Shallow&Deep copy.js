@@ -20,7 +20,9 @@ const obj3 = {...obj};
 console.log(obj3)  //{ name: 'vamshi', age: 25, school: { schoolName: 'GKP', rollNo: 33 } }
 
 obj3.school.rollNo = 44;  //as it is a property of nested object , the changes will reflect everywhere it means even in obj the rollNo will be reassigned to 44 since it is a shallow copy that we are creating here
-
+obj3.name = "hi"
+console.log(obj3)
+console.log(obj)
 
 //DEEP COPY
 

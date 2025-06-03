@@ -44,3 +44,49 @@ for(let farm =1;farm<=3;farm++){
     }
     console.log(bag);
 }
+
+
+//sorted array
+
+const arr = [-4,-3,-2,-1,0,1,2,3,4,5,6,7]
+
+function sorted(arr){
+    let length = arr.length;
+    let newArr = new Array(length).fill("");
+
+    let first = 0;
+    let last = length-1;
+
+    for(let i=length-1;i>=0;i--){
+
+        if(arr[first]**2 > arr[last]**2){
+            newArr[i] = arr[first]**2
+            first+=1
+        }
+        else{
+            newArr[i] = arr[last]**2;
+            last-=1
+        }
+        
+    }
+    return newArr;
+
+
+}
+const resp = sorted(arr);
+console.log(resp)
+
+
+let obj = {
+    name:"vamshi",
+    age:25,
+    village:"Pocharam"
+
+
+}
+
+let {name,...newobj} = obj
+console.log(newobj)
+let array = [1,2,3,4]
+let [first, ...rest] = array;
+console.log(rest)
